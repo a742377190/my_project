@@ -1,6 +1,7 @@
 # coding=utf-8
 import matplotlib.pyplot as plt
 import numpy as np
+import logging
 from mpl_toolkits.mplot3d import Axes3D
 
 
@@ -17,4 +18,6 @@ ax.plot_surface(X,Y,Z,rstride = 1,cstride = 1,cmap='rainbow')
 ax.contour(X,Y,Z,zdim='z',offset = -2 ,cmap='rainbow')
 
 ax.set_zlim(-2,2)
+
+
 plt.show()
